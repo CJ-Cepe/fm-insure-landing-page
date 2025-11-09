@@ -1,0 +1,33 @@
+{
+  "name": "fm-insure-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Insure landing page coding challenge](preview.jpg)",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass:watch": "sass --watch styles/style.scss:styles/style.css",
+    "start": "concurrently \"npm run dev\" \"npm run sass:watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJ-Cepe/fm-insure-landing-page.git"
+  },
+  "author": "CJ-Cepe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CJ-Cepe/fm-insure-landing-page/issues"
+  },
+  "homepage": "https://github.com/CJ-Cepe/fm-insure-landing-page#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "concurrently": "^9.2.1",
+    "sass": "^1.93.3",
+    "vite": "^7.2.1"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

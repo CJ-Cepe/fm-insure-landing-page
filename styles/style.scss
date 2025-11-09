@@ -1,0 +1,103 @@
+@use "hero";
+@use "features";
+@use "cta-banner";
+@use "footer";
+@use "header";
+@use "hamburger";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* transition: all 0.3s ease; */
+  /* outline: 1px solid red; */
+}
+
+img {
+  /* max-width: 100%; */
+  display: block;
+}
+
+:root {
+  --color-primary-dark: hsl(256, 26%, 20%); /* Blue 950 */
+  --color-primary-light: hsl(216, 30%, 68%); /* Blue 500 */
+  --color-neutral-dark: hsl(270, 9%, 17%); /* Gray 950 */
+  --color-neutral-medium: hsl(273, 4%, 51%); /* Gray 700 */
+  --color-neutral-light: hsl(0, 0%, 98%); /* Gray 50 */
+
+  --color-icon-gray: hsl(270, 9%, 17%);
+  --font-size-base: 16px;
+
+  --font-family-display: "DM Serif Display", serif;
+
+  --font-family-body: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-display);
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-size: clamp(3rem, 3.352vw + 2.133rem, 4.5rem);
+  line-height: 0.85;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100dvh; // to remove
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  min-width: 334px;
+}
+
+section {
+  width: 100%;
+  padding-inline: 1rem;
+  @media screen and (max-width: "769px") {
+    padding-inline: 0;
+  }
+}
+
+section,
+header {
+}
+
+.container {
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+.cta-button {
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.7em 2em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  text-transform: uppercase;
+  color: inherit;
+
+  &:hover {
+    color: var(--color-neutral-dark);
+    background-color: var(--color-neutral-light);
+  }
+}
+
+.logo-img {
+}
